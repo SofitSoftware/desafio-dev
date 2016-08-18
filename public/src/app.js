@@ -95,14 +95,9 @@ app.constant('brandList', [{ id: 1, name: 'Volkswagen' }, { id: 2, name: 'Nissan
     };
 })
 
-.controller('MainController', function($scope, $route, $routeParams, $location) {
-    $scope.$route = $route;
-    $scope.$location = $location;
-    $scope.$routeParams = $routeParams;
-})
+.controller('MainController', function($scope, $route, $routeParams, $location) {})
 
 .controller('VehicleIndexController', function($scope, removeVehicle, brandList, modelList, vehicleAPI) {
-    $scope.name = 'VehicleIndexController';
     $scope.vehicles = [];
 
     var getVehicles = function() {
@@ -142,7 +137,6 @@ app.constant('brandList', [{ id: 1, name: 'Volkswagen' }, { id: 2, name: 'Nissan
 })
 
 .controller('VehicleNewController', function($scope, $location, brandList, modelList, vehicleAPI) {
-    $scope.name = 'VehicleNewController';
     $scope.brandList = brandList; // lista de marcas
     $scope.modelList = modelList; // lista de modelos
     $scope.isEditing = true; // controla o modo de edição do formulário
@@ -168,7 +162,6 @@ app.constant('brandList', [{ id: 1, name: 'Volkswagen' }, { id: 2, name: 'Nissan
 })
 
 .controller('VehicleEditController', function($scope, $routeParams, $location, brandList, modelList, vehicleAPI) {
-    $scope.name = 'VehicleEditController';
     $scope.params = $routeParams; // parâmetros da rota
     $scope.brandList = brandList; // lista de marcas
     $scope.modelList = modelList; // lista de modelos
@@ -197,7 +190,6 @@ app.constant('brandList', [{ id: 1, name: 'Volkswagen' }, { id: 2, name: 'Nissan
 })
 
 .controller('VehicleShowController', function($scope, $routeParams, brandList, modelList, $location, removeVehicle, vehicleAPI) {
-    $scope.name = 'VehicleShowController';
     $scope.params = $routeParams; // parâmetros da rota
     $scope.brandList = brandList; // lista de marcas
     $scope.modelList = modelList; // lista de modelos
@@ -244,4 +236,6 @@ app.constant('brandList', [{ id: 1, name: 'Volkswagen' }, { id: 2, name: 'Nissan
         templateUrl: 'src/templates/vehicles/form.html',
         controller: 'VehicleShowController'
     });
+
+    $routeProvider.otherwise('/vehicles');
 });
