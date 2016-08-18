@@ -1,0 +1,26 @@
+<h1>Veículos <a href="#/vehicles/new" class="btn btn-primary pull-right"><span class="glyphicon glyphicon-plus" aria-hidden="true"></span> Adicionar novo</a></h1>
+<div class="clearfix"></div>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Nome</th>
+            <th>Placa</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Ações</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr ng-repeat="vehicle in vehicles">
+            <td><a href="#/vehicles/{{vehicle.id}}" title="Visualizar">{{vehicle.name}}</a></td>
+            <td>{{vehicle.license_plate}}</td>
+            <td>{{getBrandLabel(vehicle.brand_id)}}</td>
+            <td>{{getModelLabel(vehicle.model_id)}}</td>
+            <td>
+                <a href="#/vehicles/{{vehicle.id}}" class="btn btn-primary btn-sm" title="Visualizar"><span class="glyphicon glyphicon-search" aria-hidden="true"></span></a>
+                <a href="#/vehicles/{{vehicle.id}}/edit" class="btn btn-default btn-sm" title="Editar"><span class="glyphicon glyphicon-edit" aria-hidden="true"></span></a>
+                <a href="javascript:void(0)" class="btn btn-danger btn-sm" ng-click="remove(vehicle)" title="Remover"><span class="glyphicon glyphicon-trash" aria-hidden="true"></span></a>
+            </td>
+        </tr>
+    </tbody>
+</table>
