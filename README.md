@@ -41,5 +41,9 @@ Sua API deve estar apta a receber e também responder um objeto JSON conforme o 
 ### Dicas
 
 - Utilize o [Postman](https://www.getpostman.com/) para testar sua API.
+
+### Dúvidas
+
+- Se você tiver alguma dúvida, abra uma __issue__ aqui no repositório que te respondemos :smile_cat:
  
 Boa sorte! :new_moon_with_face:
