@@ -18,7 +18,7 @@ Para executar corretamente a aplicação _front-end_, você deve:
 
 :point_right: Executar os comandos `bower install` (para instalar as dependências) e `http-server` (para inicializar o projeto Angular) dentro da pasta **public** do repositório;
 
-:point_right: Abrir o arquivo `public/index.html` e editar o valor da variável API_URL para o endereço da sua API.
+:point_right: Abrir o arquivo `public/index.html` e editar o valor da variável **API_URL** para o endereço da sua API.
 
 #### Objeto do veículo
 Sua API deve estar preparada para receber um objeto JSON com as seguintes propriedades:
@@ -32,7 +32,7 @@ Sua API deve estar preparada para receber um objeto JSON com as seguintes propri
 }
 ```
 
-#### Dicas
+#### Dica
 :point_right: Utilize o [Postman](https://www.getpostman.com/) para testar sua API.
 
 #### Acabei, e agora?
