@@ -4,7 +4,7 @@
 :point_right: Neste repositório, você encontra uma pequena aplicação _front-end_ desenvolvida com o framework [Angular.JS](https://angularjs.org/) para cadastro de veículos. Você deverá desenvolver uma **API REST** que se comunique com essa aplicação e possibilite o cadastro, edição, remoção e visualização (individual e lista) dos veículos cadastrados em um banco de dados.
 
 #### O que você pode usar para desenvolver?
-:point_right: Sugerimos o uso de [Node.JS](https://nodejs.org/en/) para o desenvolvimento da API e um banco de dados relacional, porém você é livre para utilizar as tecnologias que achar melhor, contudo que atenda aos requisitos deste desafio.
+:point_right: Para o desenvolvimento da API deve ser feito o uso do [Node.JS](https://nodejs.org/en/) e para o banco de dados, sugerimos um banco de dados relacional.
 
 #### O que sua API deve fazer:
 :point_right: Possibilitar a criação, edição, exclusão e obtenção de dados (listagem e individual) dos veículos cadastrados no _front-end_;
